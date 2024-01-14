@@ -1,0 +1,69 @@
+.watch {
+  border: 10px dotted #000;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 80vmin;
+  height: 80vmin;
+  margin-top: 5%;
+  display: flex;
+  position: relative;
+}
+
+.watch__center {
+  z-index: 2;
+  background-color: orange;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.watch__arrow-small {
+  z-index: 1;
+  transform-origin: bottom;
+  background-color: #00f;
+  width: 3vmin;
+  height: 20vmin;
+  animation: 60s linear infinite move;
+  position: absolute;
+  bottom: 40vmin;
+}
+
+@keyframes move {
+  from {
+    rotate: none;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}
+
+.watch__arrow-big {
+  z-index: 1;
+  transform-origin: bottom;
+  background-color: green;
+  width: 1vmin;
+  height: 40vmin;
+  animation: 5s linear infinite move-seconds;
+  position: absolute;
+  bottom: 40vmin;
+}
+
+@keyframes move-seconds {
+  from {
+    rotate: none;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}
+
+body {
+  justify-content: center;
+  margin: 0;
+  display: flex;
+}
+
+/*# sourceMappingURL=index.971c2ea4.css.map */
